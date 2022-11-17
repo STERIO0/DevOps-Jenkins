@@ -14,7 +14,7 @@
                 sh "yum install -y httpd"
             }
         }
-        stage ("2. service start") {
+        stage ("3. service start") {
             steps {
                 sh "systemctl restart httpd"
                 sh "systemctl enable httpd"
